@@ -4,4 +4,4 @@ This work is proprietary and confidential. Unless an express authorization of th
 
 Copyright (C) Gondolin Electronics - All Rights Reserved.
 
-Developed and prototyped by Álvaro "Gondolindrim" A. Volpato <alvaro.volpato@usp.br> and Felipe "MrKeebs" G. Coury, november 2018.
+Developed and prototyped by Álvaro "Gondolindrim" A. Volpato (<alvaro.volpato@usp.br>) and Felipe "MrKeebs" G. Coury, november 2018.
