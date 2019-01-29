@@ -1,7 +1,14 @@
 # KeebsPCB
 
-This work is proprietary and confidential. Unless an express authorization of the owners is given, unauthorized copying, distribution, and usage, for any purposes whatsoever, of the files herein contained, via any medium, is strictly prohibited.
 
-Copyright (C) Gondolin Electronics - All Rights Reserved.
+A 60% RGB hotswappable open-source keyboard PCB.
 
-Developed and prototyped by Álvaro "Gondolindrim" A. Volpato (<alvaro.volpato@usp.br>) and Felipe "MrKeebs" G. Coury, november 2018.
+This project is licensed under the Creative Commons Non-Commercial Share-Alike 4.0 license, available in (https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Developed and prototyped by
+
+Álvaro "Gondolindrim" A. Volpato (<alvaro.volpato@usp.br>)
+
+Felipe "MrKeebs" G. Coury
+
+November 2018.
