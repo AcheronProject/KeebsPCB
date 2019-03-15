@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name keebsLogo)(type KiCad)(uri /home/alvaro/Desktop/AcheronProject/KeebsPCB/graphics/keebsLogo.pretty)(options "")(descr ""))
+)
