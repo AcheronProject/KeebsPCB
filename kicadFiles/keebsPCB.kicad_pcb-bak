@@ -8967,7 +8967,7 @@
   )
 
   (module oshLogo:osh-logo (layer F.Cu) (tedit 5D39A117) (tstamp 5D4609E1)
-    (at 170.85 85.7)
+    (at 206.35 34.2)
     (path /5C66B5D5)
     (fp_text reference L2 (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
@@ -11309,7 +11309,7 @@
     )
   )
 
-  (module acheron_Connectors:TYPE-C-31-M-12 (layer F.Cu) (tedit 5D24FFDD) (tstamp 5D432438)
+  (module acheron_Connectors:TYPE-C-31-M-12 (layer F.Cu) (tedit 5D24FFDD) (tstamp 5D4332B7)
     (at 267.4 2.2 180)
     (path /5D5405DA)
     (fp_text reference J1 (at 0 5) (layer F.SilkS)
