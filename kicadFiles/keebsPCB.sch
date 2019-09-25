@@ -5,11 +5,11 @@ EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
 Sheet 1 1
-Title "SharkPCB"
-Date "2019-05-26"
-Rev "Alpha"
+Title "KeebsPCB"
+Date "2019-09-25"
+Rev "Pre-release Alpha"
 Comp "Designed by Álvaro \"Gondolindrim\" Volpato"
-Comment1 "Acheron 40-SM-O-MX-TH-WI codename SharkPCB"
+Comment1 "In partnership with  MrKeebs"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -265,26 +265,24 @@ Text GLabel 13275 17775 0    50   Input ~ 0
 $Comp
 L Mechanical:MountingHole L2
 U 1 1 5C66B5D5
-P 4725 20975
-F 0 "L2" H 4825 21021 50  0000 L CNN
-F 1 "OSHLogo" H 4825 20930 50  0000 L CNN
-F 2 "oshLogo:osh-logo" H 4725 20975 50  0001 C CNN
-F 3 "~" H 4725 20975 50  0001 C CNN
-	1    4725 20975
+P 4700 15350
+F 0 "L2" H 4800 15396 50  0000 L CNN
+F 1 "OSHLogo" H 4800 15305 50  0000 L CNN
+F 2 "oshLogo:osh-logo" H 4700 15350 50  0001 C CNN
+F 3 "~" H 4700 15350 50  0001 C CNN
+	1    4700 15350
 	1    0    0    -1  
 $EndComp
-Text Notes 4250 20525 0    100  ~ 20
+Text Notes 4225 14900 0    100  ~ 20
 Logos and flags
 Wire Notes Line width 20
-	4600 2775 17675 2775
+	4150 14700 5575 14700
 Wire Notes Line width 20
-	4175 20325 5600 20325
+	4150 16425 5575 16425
 Wire Notes Line width 20
-	4175 22050 5600 22050
+	4150 14700 4150 16425
 Wire Notes Line width 20
-	4175 20325 4175 22050
-Wire Notes Line width 20
-	5600 20300 5600 22050
+	5575 14675 5575 16425
 Text GLabel 22150 16850 2    50   Input ~ 0
 SWDIO
 Wire Wire Line
@@ -703,11 +701,11 @@ Text GLabel 18575 16300 0    50   Input ~ 0
 3.3V
 Wire Wire Line
 	18575 16300 18625 16300
-Text Notes 5950 21125 0    50   ~ 10
+Text Notes 575  22375 0    50   ~ 10
 [1] STM32F072x8 / STM32F072xB datasheet
-Text Notes 5950 20975 0    100  ~ 20
+Text Notes 575  22225 0    100  ~ 20
 REFERENCES
-Text Notes 5950 21225 0    50   ~ 0
+Text Notes 575  22475 0    50   ~ 0
 https://www.st.com/resource/en/datasheet/stm32f072rb.pdf
 $Comp
 L Device:C_Small CB7
@@ -720,9 +718,9 @@ F 3 "~" H 18625 16150 50  0001 C CNN
 	1    18625 16150
 	-1   0    0    1   
 $EndComp
-Text Notes 5950 21425 0    50   ~ 10
+Text Notes 575  22675 0    50   ~ 10
 [2] AN4080 Application note
-Text Notes 5950 21525 0    50   ~ 0
+Text Notes 575  22775 0    50   ~ 0
 https://www.st.com/content/ccc/resource/technical/document/application_note/c9/19/d7/b8/6b/0e/4c/d3/DM00051986.pdf/files/DM00051986.pdf/jcr:content/translations/en.DM00051986.pdf
 $Comp
 L power:GND #PWR0109
@@ -836,7 +834,7 @@ Wire Notes Line width 20
 Wire Notes Line width 20
 	18150 15350 18150 15000
 Wire Notes Line width 20
-	4175 20600 5600 20600
+	4150 14975 5575 14975
 Wire Notes Line width 20
 	12650 16175 15200 16175
 Wire Notes Line width 20
@@ -869,12 +867,12 @@ $EndComp
 $Comp
 L Mechanical:MountingHole L1
 U 1 1 5D3B6D2E
-P 4725 21275
-F 0 "L1" H 4825 21321 50  0000 L CNN
-F 1 "Keebs Logo" H 4825 21230 50  0000 L CNN
-F 2 "keebsLogo:keebsLogo" H 4725 21275 50  0001 C CNN
-F 3 "~" H 4725 21275 50  0001 C CNN
-	1    4725 21275
+P 4700 15650
+F 0 "L1" H 4800 15696 50  0000 L CNN
+F 1 "Keebs Logo" H 4800 15605 50  0000 L CNN
+F 2 "keebsLogo:keebsLogo" H 4700 15650 50  0001 C CNN
+F 3 "~" H 4700 15650 50  0001 C CNN
+	1    4700 15650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1071,8 +1069,6 @@ Wire Wire Line
 Wire Notes Line width 20
 	12550 11850 14450 11850
 Wire Notes Line width 20
-	12525 15925 14425 15925
-Wire Notes Line width 20
 	7800 14725 7800 19150
 Wire Notes Line width 20
 	7800 19150 10550 19150
@@ -1232,67 +1228,67 @@ CBx are the bypass capacitors. Their value is specified in reference [2].
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5D878439
-P 5250 17750
-F 0 "H1" H 5350 17796 50  0000 L CNN
-F 1 "Half Side Hole " H 5350 17705 50  0000 L CNN
-F 2 "acheron_MountingHoles:halfSideHole" H 5250 17750 50  0001 C CNN
-F 3 "~" H 5250 17750 50  0001 C CNN
-	1    5250 17750
+P 4800 17475
+F 0 "H1" H 4900 17521 50  0000 L CNN
+F 1 "Half Side Hole " H 4900 17430 50  0000 L CNN
+F 2 "acheron_MountingHoles:halfSideHole" H 4800 17475 50  0001 C CNN
+F 3 "~" H 4800 17475 50  0001 C CNN
+	1    4800 17475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5D878CA4
-P 5250 18000
-F 0 "H2" H 5350 18046 50  0000 L CNN
-F 1 "Mounting Hole" H 5350 17955 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5250 18000 50  0001 C CNN
-F 3 "~" H 5250 18000 50  0001 C CNN
-	1    5250 18000
+P 4800 17725
+F 0 "H2" H 4900 17771 50  0000 L CNN
+F 1 "Mounting Hole" H 4900 17680 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 4800 17725 50  0001 C CNN
+F 3 "~" H 4800 17725 50  0001 C CNN
+	1    4800 17725
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5D8862CE
-P 5250 18250
-F 0 "H3" H 5350 18296 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 18205 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 5250 18250 50  0001 C CNN
-F 3 "~" H 5250 18250 50  0001 C CNN
-	1    5250 18250
+P 4800 17975
+F 0 "H3" H 4900 18021 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 4900 17930 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 4800 17975 50  0001 C CNN
+F 3 "~" H 4800 17975 50  0001 C CNN
+	1    4800 17975
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5D8866EC
-P 5250 18500
-F 0 "H4" H 5350 18546 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 18455 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5250 18500 50  0001 C CNN
-F 3 "~" H 5250 18500 50  0001 C CNN
-	1    5250 18500
+P 4800 18225
+F 0 "H4" H 4900 18271 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 4900 18180 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 4800 18225 50  0001 C CNN
+F 3 "~" H 4800 18225 50  0001 C CNN
+	1    4800 18225
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 5D886A2F
-P 5250 18750
-F 0 "H5" H 5350 18796 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 18705 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 5250 18750 50  0001 C CNN
-F 3 "~" H 5250 18750 50  0001 C CNN
-	1    5250 18750
+P 4800 18475
+F 0 "H5" H 4900 18521 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 4900 18430 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 4800 18475 50  0001 C CNN
+F 3 "~" H 4800 18475 50  0001 C CNN
+	1    4800 18475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5D9357B9
-P 5250 19000
-F 0 "H6" H 5350 19046 50  0000 L CNN
-F 1 "Half Side Hole " H 5350 18955 50  0000 L CNN
-F 2 "acheron_MountingHoles:halfSideHole" H 5250 19000 50  0001 C CNN
-F 3 "~" H 5250 19000 50  0001 C CNN
-	1    5250 19000
+P 4800 18725
+F 0 "H6" H 4900 18771 50  0000 L CNN
+F 1 "Half Side Hole " H 4900 18680 50  0000 L CNN
+F 2 "acheron_MountingHoles:halfSideHole" H 4800 18725 50  0001 C CNN
+F 3 "~" H 4800 18725 50  0001 C CNN
+	1    4800 18725
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1828,45 +1824,45 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 5E63D297
-P 5250 19250
-F 0 "H7" H 5350 19296 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 19205 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5250 19250 50  0001 C CNN
-F 3 "~" H 5250 19250 50  0001 C CNN
-	1    5250 19250
+P 4800 18975
+F 0 "H7" H 4900 19021 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 4900 18930 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 4800 18975 50  0001 C CNN
+F 3 "~" H 4800 18975 50  0001 C CNN
+	1    4800 18975
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H8
 U 1 1 5E63D4E1
-P 5250 19500
-F 0 "H8" H 5350 19546 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 19455 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 5250 19500 50  0001 C CNN
-F 3 "~" H 5250 19500 50  0001 C CNN
-	1    5250 19500
+P 4800 19225
+F 0 "H8" H 4900 19271 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 4900 19180 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 4800 19225 50  0001 C CNN
+F 3 "~" H 4800 19225 50  0001 C CNN
+	1    4800 19225
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H9
 U 1 1 5E63D910
-P 5250 19750
-F 0 "H9" H 5350 19796 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 19705 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 5250 19750 50  0001 C CNN
-F 3 "~" H 5250 19750 50  0001 C CNN
-	1    5250 19750
+P 4800 19475
+F 0 "H9" H 4900 19521 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 4900 19430 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_7mm_5.0x2.5mm" H 4800 19475 50  0001 C CNN
+F 3 "~" H 4800 19475 50  0001 C CNN
+	1    4800 19475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H10
 U 1 1 5E64C744
-P 5250 20000
-F 0 "H10" H 5350 20046 50  0000 L CNN
-F 1 "Oval Mounting Hole" H 5350 19955 50  0000 L CNN
-F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 5250 20000 50  0001 C CNN
-F 3 "~" H 5250 20000 50  0001 C CNN
-	1    5250 20000
+P 4800 19725
+F 0 "H10" H 4900 19771 50  0000 L CNN
+F 1 "Oval Mounting Hole" H 4900 19680 50  0000 L CNN
+F 2 "acheron_MountingHoles:MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm" H 4800 19725 50  0001 C CNN
+F 3 "~" H 4800 19725 50  0001 C CNN
+	1    4800 19725
 	1    0    0    -1  
 $EndComp
 Text GLabel 5075 5500 0    50   Input ~ 0
@@ -3128,23 +3124,61 @@ Extra15
 $Comp
 L Mechanical:MountingHole L3
 U 1 1 5D8DFFF3
-P 4725 21575
-F 0 "L3" H 4825 21621 50  0000 L CNN
-F 1 "Keebs Label" H 4825 21530 50  0000 L CNN
-F 2 "keebsLogo:keebsLabel" H 4725 21575 50  0001 C CNN
-F 3 "~" H 4725 21575 50  0001 C CNN
-	1    4725 21575
+P 4700 15950
+F 0 "L3" H 4800 15996 50  0000 L CNN
+F 1 "Keebs Label" H 4800 15905 50  0000 L CNN
+F 2 "keebsLogo:keebsLabel" H 4700 15950 50  0001 C CNN
+F 3 "~" H 4700 15950 50  0001 C CNN
+	1    4700 15950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole L4
 U 1 1 5D8E0395
-P 4725 21825
-F 0 "L4" H 4825 21871 50  0000 L CNN
-F 1 "Keebs Label Mask" H 4825 21780 50  0000 L CNN
-F 2 "keebsLogo:keebsLabelMask" H 4725 21825 50  0001 C CNN
-F 3 "~" H 4725 21825 50  0001 C CNN
-	1    4725 21825
+P 4700 16200
+F 0 "L4" H 4800 16246 50  0000 L CNN
+F 1 "Keebs Label Mask" H 4800 16155 50  0000 L CNN
+F 2 "keebsLogo:keebsLabelMask" H 4700 16200 50  0001 C CNN
+F 3 "~" H 4700 16200 50  0001 C CNN
+	1    4700 16200
 	1    0    0    -1  
 $EndComp
+Wire Notes Line width 20
+	14975 14700 16675 14700
+Wire Notes Line width 20
+	16675 14700 16675 12100
+Wire Notes Line width 20
+	16675 12100 14975 12100
+Wire Notes Line width 20
+	14975 12100 14975 14700
+Wire Notes Line width 20
+	14975 12400 16675 12400
+Text Notes 15400 12300 0    100  Italic 20
+Extra pins
+Wire Notes Line width 20
+	4150 19975 6150 19975
+Wire Notes Line width 20
+	6150 19975 6150 16675
+Wire Notes Line width 20
+	6150 16675 4150 16675
+Wire Notes Line width 20
+	4150 16675 4150 19975
+Wire Notes Line width 20
+	4150 17025 6150 17025
+Text Notes 4525 16925 0    100  ~ 20
+Mounting holes
+Wire Notes Line width 20
+	4600 2775 4600 9250
+Wire Notes Line width 20
+	4600 9250 18675 9250
+Wire Notes Line width 20
+	18675 9250 18675 2775
+Text Notes 4700 9150 0    100  Italic 20
+Switch matrix
+Wire Notes Line width 20
+	4600 8900 5850 8900
+Wire Notes Line width 20
+	5850 8900 5850 9250
+Wire Notes Line width 20
+	4600 2775 18675 2775
 $EndSCHEMATC
