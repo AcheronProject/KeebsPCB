@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 102)
+    (drawings 104)
     (tracks 1034)
     (zones 0)
     (modules 165)
@@ -14871,6 +14871,12 @@
       (xy -6.682798 -4.254404) (xy -6.585436 -4.254498) (xy -6.565587 -4.254501) (xy -5.994601 -4.2545)) (layer F.SilkS) (width 0.01))
   )
 
+  (gr_text NC (at 283.216 182.174) (layer F.SilkS) (tstamp 5D8D209D)
+    (effects (font (size 0.635 0.635) (thickness 0.15875)) (justify left))
+  )
+  (gr_text GND (at 283.216 187.254) (layer F.SilkS)
+    (effects (font (size 0.635 0.635) (thickness 0.15875)) (justify left))
+  )
   (gr_text "(IV) For detailed information, check the Acheron Docs page for the KeebsPCB:\nhttp://gondolindrim.github.io/AcheronDocs/keebs/intro.html" (at 419.83625 87.543125) (layer Cmts.User) (tstamp 5D861DCF)
     (effects (font (size 1.524 1.524) (thickness 0.1524)) (justify left))
   )
