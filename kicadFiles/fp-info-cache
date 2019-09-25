@@ -1,4 +1,4 @@
-16335595687204682
+16338739553334682
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72377,8 +72377,8 @@ PinHeader_1x7_P2.54mm_Vertical
 Through hole straight pin header, 1x14, 2.54mm pitch, single row
 Through hole pin header THT 1x14 2.54mm single row
 0
-6
-6
+7
+7
 acheron_Connectors
 PinHeader_1x8_P2.54mm_Vertical
 Through hole straight pin header, 1x14, 2.54mm pitch, single row
@@ -73000,7 +73000,7 @@ MoutingHole_Oval_BackOnly_7mm_5.0x2.5mm
 
 
 0
-1
+2
 1
 acheron_MountingHoles
 MoutingHole_Oval_Poker_7mm_5.0x2.5mm
@@ -73032,6 +73032,20 @@ slotMX200
 0
 acheron_SwitchSlots
 slotMX400
+
+
+0
+0
+0
+keebsLogo
+keebsLabel
+
+
+0
+0
+0
+keebsLogo
+keebsLabelMask
 
 
 0

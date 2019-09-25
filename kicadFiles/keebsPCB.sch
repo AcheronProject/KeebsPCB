@@ -293,36 +293,36 @@ Text GLabel 21750 15900 1    50   Input ~ 0
 SWCLK
 Wire Wire Line
 	21750 15900 21750 15950
-Text Notes 12725 14650 0    100  Italic 20
-Serial programming
+Text Notes 13300 12075 0    100  Italic 20
+SWD
 $Comp
 L power:GND #PWR0103
 U 1 1 5CFDFC6D
-P 13375 14100
-F 0 "#PWR0103" H 13375 13850 50  0001 C CNN
-F 1 "GND" V 13380 13972 50  0000 R CNN
-F 2 "" H 13375 14100 50  0001 C CNN
-F 3 "" H 13375 14100 50  0001 C CNN
-	1    13375 14100
+P 13250 13950
+F 0 "#PWR0103" H 13250 13700 50  0001 C CNN
+F 1 "GND" V 13255 13822 50  0000 R CNN
+F 2 "" H 13250 13950 50  0001 C CNN
+F 3 "" H 13250 13950 50  0001 C CNN
+	1    13250 13950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14050 13425 13975 13425
-Text GLabel 14050 13325 2    50   Input ~ 0
+	13925 13275 13850 13275
+Text GLabel 13925 13175 2    50   Input ~ 0
 SWCLK
-Text GLabel 14050 13425 2    50   Input ~ 0
+Text GLabel 13925 13275 2    50   Input ~ 0
 SWDIO
 Wire Wire Line
-	13975 13325 14050 13325
+	13850 13175 13925 13175
 Wire Wire Line
-	13375 14025 13375 14100
-Text GLabel 13475 12750 1    50   Input ~ 0
+	13250 13875 13250 13950
+Text GLabel 13350 12600 1    50   Input ~ 0
 3.3V
 Wire Wire Line
-	13475 12825 13475 12750
+	13350 12675 13350 12600
 Wire Wire Line
-	14050 13125 13975 13125
-Text GLabel 14050 13125 2    50   Input ~ 0
+	13925 12975 13850 12975
+Text GLabel 13925 12975 2    50   Input ~ 0
 NRST
 $Comp
 L Transistor_BJT:DTC123J QRST1
@@ -1069,11 +1069,7 @@ $EndComp
 Wire Wire Line
 	9100 13950 9100 13900
 Wire Notes Line width 20
-	12525 14450 12525 15925
-Wire Notes Line width 20
-	12525 14450 14425 14450
-Wire Notes Line width 20
-	14425 14450 14425 15925
+	12550 11850 14450 11850
 Wire Notes Line width 20
 	12525 15925 14425 15925
 Wire Notes Line width 20
@@ -1097,7 +1093,7 @@ Wire Notes Line
 Text Notes 8225 18525 1    50   ~ 0
 Shield
 Wire Notes Line width 20
-	12525 14750 14425 14750
+	12550 12150 14450 12150
 Wire Notes Line width 20
 	12650 16500 15200 16500
 Wire Notes Line width 20
@@ -2956,31 +2952,20 @@ Row5
 Wire Wire Line
 	19250 19450 19250 19400
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J2
-U 1 1 5DD65212
-P 13475 13425
-F 0 "J2" H 13032 13471 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 13032 13380 50  0000 R CNN
-F 2 "acheron_Connectors:Conn_ARM_JTAG_SWD_10" H 13475 13425 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 13125 12175 50  0001 C CNN
-	1    13475 13425
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0114
 U 1 1 5DDA2A9F
-P 13475 14100
-F 0 "#PWR0114" H 13475 13850 50  0001 C CNN
-F 1 "GND" V 13480 13972 50  0000 R CNN
-F 2 "" H 13475 14100 50  0001 C CNN
-F 3 "" H 13475 14100 50  0001 C CNN
-	1    13475 14100
+P 13350 13950
+F 0 "#PWR0114" H 13350 13700 50  0001 C CNN
+F 1 "GND" V 13355 13822 50  0000 R CNN
+F 2 "" H 13350 13950 50  0001 C CNN
+F 3 "" H 13350 13950 50  0001 C CNN
+	1    13350 13950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13475 14025 13475 14100
-NoConn ~ 13975 13625
-NoConn ~ 13975 13525
+	13350 13875 13350 13950
+NoConn ~ 13850 13475
+NoConn ~ 13850 13375
 $Comp
 L Connector_Generic:Conn_01x07 J3
 U 1 1 5DEDDD1F
@@ -3001,6 +2986,165 @@ F 1 "Conn_01x14" H 15980 13951 50  0000 L CNN
 F 2 "acheron_Connectors:PinHeader_1x8_P2.54mm_Vertical" H 15900 14050 50  0001 C CNN
 F 3 "~" H 15900 14050 50  0001 C CNN
 	1    15900 14050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 20
+	12550 14500 14450 14500
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J2
+U 1 1 5DD65212
+P 13350 13275
+F 0 "J2" V 12750 13350 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" V 12850 13750 50  0000 R CNN
+F 2 "acheron_Connectors:Conn_ARM_JTAG_SWD_10" H 13350 13275 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 13000 12025 50  0001 C CNN
+	1    13350 13275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15625 12925 15700 12925
+Text GLabel 15625 12925 0    50   Input ~ 0
+Extra1
+Wire Notes Line width 20
+	14450 11850 14450 14500
+Wire Notes Line width 20
+	12550 11850 12550 14500
+Wire Wire Line
+	15625 13025 15700 13025
+Text GLabel 15625 13025 0    50   Input ~ 0
+Extra2
+Wire Wire Line
+	15625 13125 15700 13125
+Text GLabel 15625 13125 0    50   Input ~ 0
+Extra3
+Wire Wire Line
+	15625 13225 15700 13225
+Text GLabel 15625 13225 0    50   Input ~ 0
+Extra4
+Wire Wire Line
+	15625 13325 15700 13325
+Text GLabel 15625 13325 0    50   Input ~ 0
+Extra5
+Wire Wire Line
+	15625 13425 15700 13425
+Text GLabel 15625 13425 0    50   Input ~ 0
+Extra6
+Wire Wire Line
+	15625 13750 15700 13750
+Text GLabel 15625 13750 0    50   Input ~ 0
+Extra8
+Wire Wire Line
+	15625 13850 15700 13850
+Text GLabel 15625 13850 0    50   Input ~ 0
+Extra9
+Wire Wire Line
+	15625 13950 15700 13950
+Text GLabel 15625 13950 0    50   Input ~ 0
+Extra10
+Wire Wire Line
+	15625 14050 15700 14050
+Text GLabel 15625 14050 0    50   Input ~ 0
+Extra11
+Wire Wire Line
+	15625 14150 15700 14150
+Text GLabel 15625 14150 0    50   Input ~ 0
+Extra12
+Wire Wire Line
+	15625 14250 15700 14250
+Text GLabel 15625 14250 0    50   Input ~ 0
+Extra13
+Wire Wire Line
+	15625 14350 15700 14350
+Text GLabel 15625 14350 0    50   Input ~ 0
+Extra14
+Wire Wire Line
+	15625 14450 15700 14450
+Text GLabel 15625 14450 0    50   Input ~ 0
+Extra15
+Wire Wire Line
+	15625 13525 15700 13525
+Text GLabel 15625 13525 0    50   Input ~ 0
+Extra7
+Wire Wire Line
+	21500 15875 21500 15950
+Text GLabel 21500 15875 1    50   Input ~ 0
+Extra1
+Wire Wire Line
+	22175 17600 22100 17600
+Text GLabel 22175 17600 2    50   Input ~ 0
+Extra2
+Wire Wire Line
+	22175 17850 22100 17850
+Text GLabel 22175 17850 2    50   Input ~ 0
+Extra3
+Wire Wire Line
+	22175 18100 22100 18100
+Text GLabel 22175 18100 2    50   Input ~ 0
+Extra4
+Wire Wire Line
+	22175 18350 22100 18350
+Text GLabel 22175 18350 2    50   Input ~ 0
+Extra5
+Wire Wire Line
+	22175 18600 22100 18600
+Text GLabel 22175 18600 2    50   Input ~ 0
+Extra6
+Wire Wire Line
+	22175 18850 22100 18850
+Text GLabel 22175 18850 2    50   Input ~ 0
+Extra7
+Wire Wire Line
+	21250 19475 21250 19400
+Text GLabel 21250 19475 3    50   Input ~ 0
+Extra8
+Wire Wire Line
+	21000 19475 21000 19400
+Text GLabel 21000 19475 3    50   Input ~ 0
+Extra9
+Wire Wire Line
+	20750 19475 20750 19400
+Text GLabel 20750 19475 3    50   Input ~ 0
+Extra10
+Wire Wire Line
+	20500 19475 20500 19400
+Text GLabel 20500 19475 3    50   Input ~ 0
+Extra11
+Wire Wire Line
+	20250 19475 20250 19400
+Text GLabel 20250 19475 3    50   Input ~ 0
+Extra12
+Wire Wire Line
+	20000 19475 20000 19400
+Text GLabel 20000 19475 3    50   Input ~ 0
+Extra13
+Wire Wire Line
+	19750 19475 19750 19400
+Text GLabel 19750 19475 3    50   Input ~ 0
+Extra14
+Wire Wire Line
+	19500 19475 19500 19400
+Text GLabel 19500 19475 3    50   Input ~ 0
+Extra15
+$Comp
+L Mechanical:MountingHole L3
+U 1 1 5D8DFFF3
+P 4725 21575
+F 0 "L3" H 4825 21621 50  0000 L CNN
+F 1 "Keebs Label" H 4825 21530 50  0000 L CNN
+F 2 "keebsLogo:keebsLabel" H 4725 21575 50  0001 C CNN
+F 3 "~" H 4725 21575 50  0001 C CNN
+	1    4725 21575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole L4
+U 1 1 5D8E0395
+P 4725 21825
+F 0 "L4" H 4825 21871 50  0000 L CNN
+F 1 "Keebs Label Mask" H 4825 21780 50  0000 L CNN
+F 2 "keebsLogo:keebsLabelMask" H 4725 21825 50  0001 C CNN
+F 3 "~" H 4725 21825 50  0001 C CNN
+	1    4725 21825
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
